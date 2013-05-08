@@ -43,3 +43,15 @@ NET axi_i2s_adi_0_MCLK_pin LOC = "AB2" | IOSTANDARD = "LVCMOS25"; # AC-MCLK
 #NET pmod_ja8       LOC = AB10 | IOSTANDARD="LVCMOS25";
 #NET pmod_ja9       LOC = AB9  | IOSTANDARD="LVCMOS25";
 #NET pmod_ja10      LOC = AA8  | IOSTANDARD="LVCMOS25";
+
+NET processing_system7_0_GPIO_pin[0]  LOC = P16  | IOSTANDARD="LVCMOS25";  # "BTNC"
+NET processing_system7_0_GPIO_pin[7]  LOC = R16  | IOSTANDARD="LVCMOS25";  # "BTND"
+NET processing_system7_0_GPIO_pin[8]  LOC = N15  | IOSTANDARD="LVCMOS25";  # "BTNL"
+NET processing_system7_0_GPIO_pin[9]  LOC = R18  | IOSTANDARD="LVCMOS25";  # "BTNR"
+NET processing_system7_0_GPIO_pin[10] LOC = T18  | IOSTANDARD="LVCMOS25";  # "BTNU"
+NET processing_system7_0_GPIO_pin[4]  LOC = U10  | IOSTANDARD="LVCMOS25";  # "OLED-DC"
+NET processing_system7_0_GPIO_pin[3]  LOC = U9   | IOSTANDARD="LVCMOS25";  # "OLED-RES"
+NET processing_system7_0_GPIO_pin[5]  LOC = AB12 | IOSTANDARD="LVCMOS25";  # "OLED-SCLK"
+NET processing_system7_0_GPIO_pin[6]  LOC = AA12 | IOSTANDARD="LVCMOS25";  # "OLED-SDIN"
+NET processing_system7_0_GPIO_pin[1]  LOC = U11  | IOSTANDARD="LVCMOS25";  # "OLED-VBAT"
+NET processing_system7_0_GPIO_pin[2]  LOC = U12  | IOSTANDARD="LVCMOS25";  # "OLED-VDD"

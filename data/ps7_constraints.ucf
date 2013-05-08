@@ -19,12 +19,12 @@
 # I/O STANDARDS and Location Constraints                                   #
 ############################################################################
 
-NET "MIO[53]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "C12" | PULLUP = "TRUE" ; #  Enet 0 / mdio / MIO[53]
-NET "MIO[52]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "D10" | PULLUP = "TRUE" ; #  Enet 0 / mdc / MIO[52]
-NET "MIO[51]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "C10" | PULLUP = "TRUE" ; #  I2C 0 / sda / MIO[51]
-NET "MIO[50]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "D13" | PULLUP = "TRUE" ; #  I2C 0 / scl / MIO[50]
-NET "MIO[49]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "C14" | PULLUP = "TRUE" ; #  UART 1 / rx / MIO[49]
-NET "MIO[48]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "D11" | PULLUP = "TRUE" ; #  UART 1 / tx / MIO[48]
+NET "MIO[53]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "C12" ; #  Enet 0 / mdio / MIO[53]
+NET "MIO[52]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "D10" ; #  Enet 0 / mdc / MIO[52]
+NET "MIO[51]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "C10" ; #  GPIO / gpio[51] / MIO[51]
+NET "MIO[50]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "D13" ; #  GPIO / gpio[50] / MIO[50]
+NET "MIO[49]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "C14" ; #  UART 1 / rx / MIO[49]
+NET "MIO[48]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "D11" ; #  UART 1 / tx / MIO[48]
 NET "MIO[47]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "B10" | PULLUP = "TRUE" ; #  SD 0 / cd / MIO[47]
 NET "MIO[46]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "D12" | PULLUP = "TRUE" ; #  SD 0 / wp / MIO[46]
 NET "MIO[45]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "fast" | LOC = "B9" | PULLUP = "TRUE" ; #  SD 0 / data[3] / MIO[45]
@@ -57,13 +57,13 @@ NET "MIO[19]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "fast" | LOC = "E10
 NET "MIO[18]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "fast" | LOC = "A7" | PULLUP = "TRUE" ; #  Enet 0 / txd[1] / MIO[18]
 NET "MIO[17]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "fast" | LOC = "E9" | PULLUP = "TRUE" ; #  Enet 0 / txd[0] / MIO[17]
 NET "MIO[16]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "fast" | LOC = "D6" | PULLUP = "TRUE" ; #  Enet 0 / tx_clk / MIO[16]
-NET "MIO[15]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "E6" | PULLUP = "TRUE" ; #  GPIO / gpio[15] / MIO[15]
-NET "MIO[14]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "B6" | PULLUP = "TRUE" ; #  GPIO / gpio[14] / MIO[14]
+NET "MIO[15]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "E6" ; #  GPIO / gpio[15] / MIO[15]
+NET "MIO[14]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "B6" ; #  GPIO / gpio[14] / MIO[14]
 NET "MIO[13]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "A6" | PULLUP = "TRUE" ; #  PJTAG / tms / MIO[13]
 NET "MIO[12]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "C5" | PULLUP = "TRUE" ; #  PJTAG / tck / MIO[12]
 NET "MIO[11]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "B4" | PULLUP = "TRUE" ; #  PJTAG / tdo / MIO[11]
 NET "MIO[10]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "G7" | PULLUP = "TRUE" ; #  PJTAG / tdi / MIO[10]
-NET "MIO[9]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "C4" | PULLUP = "TRUE" ; #  GPIO / gpio[9] / MIO[9]
+NET "MIO[9]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "C4" ; #  GPIO / gpio[9] / MIO[9]
 NET "MIO[8]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "E5" ; #  Quad SPI Flash / qspi_fbclk / MIO[8]
 NET "MIO[7]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "D5" ; #  GPIO / gpio[7] / MIO[7]
 NET "MIO[6]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "A4" ; #  Quad SPI Flash / qspi0_sclk / MIO[6]
@@ -71,8 +71,8 @@ NET "MIO[5]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "A3" 
 NET "MIO[4]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "E4" ; #  Quad SPI Flash / qspi0_io[2] / MIO[4]
 NET "MIO[3]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "F6" ; #  Quad SPI Flash / qspi0_io[1] / MIO[3]
 NET "MIO[2]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "A2" ; #  Quad SPI Flash / qspi0_io[0] / MIO[2]
-NET "MIO[1]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "A1" | PULLUP = "TRUE" ; #  Quad SPI Flash / qspi0_ss_b / MIO[1]
-NET "MIO[0]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "G6" | PULLUP = "TRUE" ; #  GPIO / gpio[0] / MIO[0]
+NET "MIO[1]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "A1" ; #  Quad SPI Flash / qspi0_ss_b / MIO[1]
+NET "MIO[0]"   IOSTANDARD = LVCMOS33 | DRIVE = "8" | SLEW = "fast" | LOC = "G6" ; #  GPIO / gpio[0] / MIO[0]
 NET "DDR_WEB"   IOSTANDARD = SSTL15 | SLEW = "SLOW" | LOC = "R4" ; 
 NET "DDR_VRP"   IOSTANDARD = SSTL15_T_DCI | SLEW = "FAST" | LOC = "N7" ; 
 NET "DDR_VRN"   IOSTANDARD = SSTL15_T_DCI | SLEW = "FAST" | LOC = "M7" ; 
