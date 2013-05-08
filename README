@@ -1,0 +1,22 @@
+
+
+FPGA image for the Zedboard supporting HDMI, OLED, buttons and audio, based on ADI's reference design
+
+To build this design, you need XPS version 14.4 from Xilinx. Also, you will need to get the FPGA
+reference design from ADI, which contains the VHDL code. There is no VHDL code in this repository!
+
+http://wiki.analog.com/resources/fpga/xilinx/kc705/adv7511
+
+Unpack the tar file somewhere, and put this repository in the same directory as it will look for
+the IP cores in ../cf_lib.
+
+Load the project into XPS and click the "Export" button. This will build the bitfile, and open the
+tooling to build the FSBL. To create the FSBL, follow the procedure on the ADI wiki under "Build the boot image"
+
+http://wiki.analog.com/resources/tools-software/linux-drivers/platforms/zynq
+
+You can then use the meta-zynq layer to build a nice linux image with sound and video support out-of-the-box,
+by pointing to the "system.bit" and "fsbl.elf" files you created from this repo.
+
+Maybe some day I'll add a bitbake recipe that fetches from this repository and calls the Xilinx tools
+directly to generate it all without having to click on all sorts of GUIs.
